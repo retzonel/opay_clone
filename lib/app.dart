@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:opay_clone/core/theme/app_colors.dart';
+import 'package:opay_clone/features/screens/main_screen.dart';
 import 'package:opay_clone/features/screens/welcome_screen.dart';
 
 class MyApp extends StatelessWidget {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.javaColor),
       ),
 
-      home: WelcomeScreen()
+      home: MainScreen()
     );
   }
 }

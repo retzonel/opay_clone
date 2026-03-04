@@ -71,25 +71,39 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
 
+                  SizedBox(height: 10,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    
+
                     children: [
                       Text(
                         "Lost your mobile number, ",
-                        style: TextStyle(fontWeight: FontWeight.w200, fontSize: 11),
+                        style: TextStyle(
+                          fontWeight: FontWeight.w200,
+                          fontSize: 11,
+                        ),
                       ),
                       TextButton(
                         onPressed: () {},
+                        style: TextButton.styleFrom(
+                          minimumSize: Size(1, 12),
+                          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                          padding: EdgeInsets.all(0)
+                        ),
                         child: Text(
                           "Change Now",
-                          style: TextStyle(color: AppColors.javaColor, fontSize: 11, fontWeight: FontWeight.w300),
+                          style: TextStyle(
+                            color: AppColors.javaColor,
+                            fontSize: 11,
+                            fontWeight: FontWeight.w300,
+                          ),
+                        
                         ),
                       ),
                     ],
                   ),
 
-                  SizedBox(height: 50),
+                  SizedBox(height: 30),
 
                   FilledButton(
                     onPressed: () {},
@@ -99,6 +113,38 @@ class LoginScreen extends StatelessWidget {
                       elevation: 0,
                     ),
                     child: Text("NEXT", style: AppStyles.buttonTextStyle),
+                  ),
+
+                  SizedBox(height: 8),
+                  Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Don't have an OPay account yet?",
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: AppColors.blackColor,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          style: TextButton.styleFrom(
+                            padding: EdgeInsets.all(0),
+                            tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                            minimumSize: Size(0, 12),
+                          ),
+                          child: Text(
+                            "Click here to get one",
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: AppColors.javaColor,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),

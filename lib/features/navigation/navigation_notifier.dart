@@ -1,3 +1,3 @@
 import 'package:flutter/material.dart';
 
-ValueNotifier<int> selectedScreenNotifier = ValueNotifier(0);
+ValueNotifier<int> selectedScreenNotifier = ValueNotifier<int>(0);
